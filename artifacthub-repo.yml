@@ -1,0 +1,6 @@
+# artifacthub-repo.yml
+repositoryID: 
+name: Cableship Charts
+description: Helm Charts
+type: helm
+url: https://cableship.github.io/helm-charts/
