@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  argocd-source-tracker:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-04-14T23:08:14.898997466Z"
+    description: A Helm chart for Kubernetes
+    digest: 1b5153c5aff7cd0c7babaa8c8d5bae978d4c5434de826d08911ea86a19b3c5e4
+    name: argocd-source-tracker
+    type: application
+    urls:
+    - https://github.com/cableship/helm-charts/releases/download/argocd-source-tracker-0.0.1/argocd-source-tracker-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-04-14T23:08:14.899003498Z"
