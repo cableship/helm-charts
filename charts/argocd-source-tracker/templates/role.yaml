@@ -13,6 +13,7 @@ rules:
   verbs:
   - get
   - list
+  - watch
 - apiGroups:
   - argoproj.io
   resources:
@@ -21,4 +22,5 @@ rules:
   verbs:
   - get
   - list
+  - watch
 {{- end }}
