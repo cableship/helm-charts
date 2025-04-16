@@ -42,8 +42,13 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: {{ .Values.server.port | default 8080 }}
               protocol: TCP
+            {{- if .Values.server.metricsPort }}
+            - name: metrics
+              containerPort: {{ .Values.server.metricsPort }}
+              protocol: TCP
+            {{- end }}
           {{- with .Values.livenessProbe }}
           livenessProbe:
             {{- toYaml . | nindent 12 }}
