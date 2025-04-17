@@ -1,0 +1,18 @@
+{{- if .Values.prometheus.enabled -}}
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: {{ include "argocd-source-tracker.fullname" . }}
+  labels:
+      {{- include "argocd-source-tracker.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "argocd-source-tracker.labels" . | nindent 6 }}
+      {{- with .Values.podLabels }}
+      {{- toYaml . | nindent 8 }}
+      {{- end }}
+  podMetricsEndpoints:
+  - port: {{ and (.Values.server.metricsPort) (ne .Values.server.metricsPort .Values.server.port) | ternary "metrics" "http" }}
+    path: /metrics
+{{- end -}}

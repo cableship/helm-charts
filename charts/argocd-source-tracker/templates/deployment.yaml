@@ -40,10 +40,18 @@ spec:
           {{- end }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          envFrom:
+          - configMapRef:
+              name: {{ include "argocd-source-tracker.fullname" . }}-cm
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: {{ .Values.server.port | default 8080 }}
               protocol: TCP
+            {{- if and (.Values.server.metricsPort) (ne .Values.server.metricsPort .Values.server.port) }}
+            - name: metrics
+              containerPort: {{ .Values.server.metricsPort }}
+              protocol: TCP
+            {{- end }}
           {{- with .Values.livenessProbe }}
           livenessProbe:
             {{- toYaml . | nindent 12 }}
