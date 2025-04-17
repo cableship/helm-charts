@@ -127,4 +127,7 @@ server:
   port: 8080
 
 prometheus:
-  enabled: true
+  enabled: false
+
+argocd:
+  url: null

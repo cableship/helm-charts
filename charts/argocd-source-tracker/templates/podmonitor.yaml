@@ -13,6 +13,6 @@ spec:
       {{- toYaml . | nindent 8 }}
       {{- end }}
   podMetricsEndpoints:
-  - port: {{ gt (int .Values.server.metricsPort) 0 | ternary "metrics" "http" }}
+  - port: {{ and (.Values.server.metricsPort) (ne .Values.server.metricsPort .Values.server.port) | ternary "metrics" "http" }}
     path: /metrics
 {{- end -}}
