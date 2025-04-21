@@ -131,3 +131,15 @@ prometheus:
 
 argocd:
   url: null
+
+redisConfig:
+  type: argoInstance
+  argoInstance: 
+    svcName:
+    secretName:
+## NOT SUPPORTED YET
+  # external:
+  #   url:
+  #   password:
+  # embedded:
+  #   values:

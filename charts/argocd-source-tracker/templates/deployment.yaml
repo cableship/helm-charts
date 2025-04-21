@@ -40,6 +40,18 @@ spec:
           {{- end }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          {{- if eq .Values.redisConfig.type "argoInstance" }}
+          env:
+          - name: REDIS_HOST
+            value: {{ .Values.redisConfig.argoInstance.svcName }}
+          - name: REDIS_DB
+            value: "10"
+          - name: REDIS_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.redisConfig.argoInstance.secretName }}
+                key: auth
+          {{- end }}
           envFrom:
           - configMapRef:
               name: {{ include "argocd-source-tracker.fullname" . }}-cm
