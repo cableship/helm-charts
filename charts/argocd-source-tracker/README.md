@@ -1,8 +1,12 @@
 # argocd-source-tracker
 
-![Version: 0.0.8](https://img.shields.io/badge/Version-0.0.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.6](https://img.shields.io/badge/AppVersion-0.0.6-informational?style=flat-square)
+![Version: 0.0.9](https://img.shields.io/badge/Version-0.0.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.6](https://img.shields.io/badge/AppVersion-0.0.6-informational?style=flat-square)
 
 A Helm chart for Kubernetes
+
+## Source Code
+
+* <https://github.com/cableship/argocd-source-tracker>
 
 ## Values
 
@@ -40,10 +44,7 @@ A Helm chart for Kubernetes
 | redisConfig.argoInstance.svcName | string | `nil` |  |
 | redisConfig.type | string | `"argoInstance"` |  |
 | replicaCount | int | `1` |  |
-| resources.limits.cpu | string | `"100m"` |  |
-| resources.limits.memory | string | `"128Mi"` |  |
-| resources.requests.cpu | string | `"50m"` |  |
-| resources.requests.memory | string | `"60Mi"` |  |
+| resources | string | `nil` |  |
 | securityContext | object | `{}` |  |
 | server.metricsPort | int | `8081` |  |
 | server.port | int | `8080` |  |
