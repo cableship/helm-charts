@@ -1,6 +1,9 @@
 apiVersion: v2
 name: chart-sentinel
-description: A Helm chart for Kubernetes
+description: |
+  A Helm chart for ChartSentinel
+
+  This application tracks your ArgoCD applications watch chart sources and report when new versions ar available
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -24,3 +27,4 @@ version: 0.0.10
 appVersion: 0.0.7
 sources:
   - https://github.com/cableship/chart-sentinel
+
