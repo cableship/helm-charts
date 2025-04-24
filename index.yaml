@@ -93,4 +93,17 @@ entries:
     urls:
     - https://github.com/cableship/helm-charts/releases/download/argocd-source-tracker-0.0.1/argocd-source-tracker-0.0.1.tgz
     version: 0.0.1
-generated: "2025-04-23T13:30:21.232278515Z"
+  chart-sentinel:
+  - apiVersion: v2
+    appVersion: 0.0.6
+    created: "2025-04-24T21:04:04.713184543Z"
+    description: A Helm chart for Kubernetes
+    digest: 304efbf0e0128159b791457d4c38875fec170b970a218ce1058439e294b2c888
+    name: chart-sentinel
+    sources:
+    - https://github.com/cableship/chart-sentinel
+    type: application
+    urls:
+    - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.9/chart-sentinel-0.0.9.tgz
+    version: 0.0.9
+generated: "2025-04-24T21:04:04.713212104Z"
