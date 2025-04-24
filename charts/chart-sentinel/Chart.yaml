@@ -29,3 +29,24 @@ sources:
   - https://github.com/cableship/chart-sentinel
 
 icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
+
+maintainers:
+  - name: ArnaudTa
+    url: https://github.com/ArnaudTA
+    email: arnaud.tardif@tuta.io
+
+keywords:
+  - argocd
+  - chart
+  - monitoring
+
+annotations:
+  artifacthub.io/links: |
+    - name: Chart Source
+      url: https://github.com/cableship/helm-charts
+    - name: Upstream Project
+      url: https://github.com/cableship/chart-sentinel
+  artifacthub.io/operator: "false"
+  artifacthub.io/license: Apache-2.0
+
+home: https://github.com/cableship/chart-sentinel
