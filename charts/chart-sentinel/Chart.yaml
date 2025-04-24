@@ -28,3 +28,4 @@ appVersion: 0.0.7
 sources:
   - https://github.com/cableship/chart-sentinel
 
+icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
