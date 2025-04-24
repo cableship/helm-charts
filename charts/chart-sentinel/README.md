@@ -1,4 +1,4 @@
-# argocd-source-tracker
+# ChartSentinel
 
 ![Version: 0.0.9](https://img.shields.io/badge/Version-0.0.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.6](https://img.shields.io/badge/AppVersion-0.0.6-informational?style=flat-square)
 
@@ -6,7 +6,7 @@ A Helm chart for Kubernetes
 
 ## Source Code
 
-* <https://github.com/cableship/argocd-source-tracker>
+* <https://github.com/cableship/chart-sentinel>
 
 ## Values
 
@@ -20,7 +20,7 @@ A Helm chart for Kubernetes
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"Always"` |  |
-| image.repository | string | `"ghcr.io/cableship/argocd-source-tracker"` |  |
+| image.repository | string | `"ghcr.io/cableship/chart-sentinel"` |  |
 | image.tag | string | `""` |  |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |

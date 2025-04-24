@@ -2,13 +2,13 @@
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:
-  name: {{ include "argocd-source-tracker.fullname" . }}
+  name: {{ include "chart-sentinel.fullname" . }}
   labels:
-      {{- include "argocd-source-tracker.labels" . | nindent 4 }}
+      {{- include "chart-sentinel.labels" . | nindent 4 }}
 spec:
   selector:
     matchLabels:
-      {{- include "argocd-source-tracker.labels" . | nindent 6 }}
+      {{- include "chart-sentinel.labels" . | nindent 6 }}
       {{- with .Values.podLabels }}
       {{- toYaml . | nindent 8 }}
       {{- end }}

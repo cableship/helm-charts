@@ -2,15 +2,15 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: {{ include "argocd-source-tracker.fullname" . }}
+  name: {{ include "chart-sentinel.fullname" . }}
   labels:
-    {{- include "argocd-source-tracker.labels" . | nindent 4 }}
+    {{- include "chart-sentinel.labels" . | nindent 4 }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
-  name: {{ include "argocd-source-tracker.fullname" . }}
+  name: {{ include "chart-sentinel.fullname" . }}
 subjects:
 - kind: ServiceAccount
-  name: {{ include "argocd-source-tracker.serviceAccountName" . }}
+  name: {{ include "chart-sentinel.serviceAccountName" . }}
   namespace: {{ .Release.Namespace }}
 {{- end }}
