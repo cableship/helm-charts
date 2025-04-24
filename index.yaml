@@ -95,18 +95,6 @@ entries:
     version: 0.0.1
   chart-sentinel:
   - apiVersion: v2
-    appVersion: 0.0.7
-    created: "2025-04-24T21:14:33.521528943Z"
-    description: A Helm chart for Kubernetes
-    digest: b10a5967671cee21df10823d6ddec61bfd0d1a44c796b7f54416461fbc617f60
-    name: chart-sentinel
-    sources:
-    - https://github.com/cableship/chart-sentinel
-    type: application
-    urls:
-    - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.10/chart-sentinel-0.0.10.tgz
-    version: 0.0.10
-  - apiVersion: v2
     appVersion: 0.0.6
     created: "2025-04-24T21:04:04.713184543Z"
     description: A Helm chart for Kubernetes
