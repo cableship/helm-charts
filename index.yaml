@@ -94,12 +94,61 @@ entries:
     - https://github.com/cableship/helm-charts/releases/download/argocd-source-tracker-0.0.1/argocd-source-tracker-0.0.1.tgz
     version: 0.0.1
   chart-sentinel:
-  - apiVersion: v2
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/cableship/helm-charts
+        - name: Upstream Project
+          url: https://github.com/cableship/chart-sentinel
+      artifacthub.io/operator: "false"
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-09-06T22:28:12.689767289Z"
+    description: 'A Helm chart for ChartSentinel  This application tracks your ArgoCD
+      applications watch chart sources and report when new versions ar available '
+    digest: 19cd1cb03e1e5eeefca865e3798d64dae1d7d858b194408013dbfcf187af49be
+    home: https://github.com/cableship/chart-sentinel
+    icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
+    keywords:
+    - argocd
+    - chart
+    - monitoring
+    maintainers:
+    - email: arnaud.tardif@tuta.io
+      name: ArnaudTa
+      url: https://github.com/ArnaudTA
+    name: chart-sentinel
+    sources:
+    - https://github.com/cableship/chart-sentinel
+    type: application
+    urls:
+    - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.11/chart-sentinel-0.0.11.tgz
+    version: 0.0.11
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/cableship/helm-charts
+        - name: Upstream Project
+          url: https://github.com/cableship/chart-sentinel
+      artifacthub.io/operator: "false"
+    apiVersion: v2
     appVersion: 0.0.7
     created: "2025-04-24T21:36:19.715131327Z"
     description: 'A Helm chart for ChartSentinel  This application tracks your ArgoCD
       applications watch chart sources and report when new versions ar available '
     digest: 93f070f83697c5d5cfe24f694310944547a163d396e7566190fa2d053a058f17
+    home: https://github.com/cableship/chart-sentinel
+    icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
+    keywords:
+    - argocd
+    - chart
+    - monitoring
+    maintainers:
+    - email: arnaud.tardif@tuta.io
+      name: ArnaudTa
+      url: https://github.com/ArnaudTA
     name: chart-sentinel
     sources:
     - https://github.com/cableship/chart-sentinel
@@ -107,29 +156,12 @@ entries:
     urls:
     - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.10/chart-sentinel-0.0.10.tgz
     version: 0.0.10
-    icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
-    maintainers:
-      - name: ArnaudTa
-        url: https://github.com/ArnaudTA
-        email: arnaud.tardif@tuta.io
-    keywords:
-      - argocd
-      - chart
-      - monitoring
-    annotations:
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/cableship/helm-charts
-        - name: Upstream Project
-          url: https://github.com/cableship/chart-sentinel
-      artifacthub.io/operator: "false"
-      artifacthub.io/license: Apache-2.0
-    home: https://github.com/cableship/chart-sentinel
   - apiVersion: v2
     appVersion: 0.0.6
     created: "2025-04-24T21:04:04.713184543Z"
     description: A Helm chart for Kubernetes
     digest: 304efbf0e0128159b791457d4c38875fec170b970a218ce1058439e294b2c888
+    icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
     name: chart-sentinel
     sources:
     - https://github.com/cableship/chart-sentinel
@@ -137,5 +169,4 @@ entries:
     urls:
     - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.9/chart-sentinel-0.0.9.tgz
     version: 0.0.9
-    icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
-generated: "2025-04-24T21:36:19.715178406Z"
+generated: "2025-09-06T22:28:12.689799749Z"
