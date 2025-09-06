@@ -1,10 +1,18 @@
 # chart-sentinel
 
-![Version: 0.0.10](https://img.shields.io/badge/Version-0.0.10-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.7](https://img.shields.io/badge/AppVersion-0.0.7-informational?style=flat-square)
+![Version: 0.0.11](https://img.shields.io/badge/Version-0.0.11-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
 
 A Helm chart for ChartSentinel
 
 This application tracks your ArgoCD applications watch chart sources and report when new versions ar available
+
+**Homepage:** <https://github.com/cableship/chart-sentinel>
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| ArnaudTa | <arnaud.tardif@tuta.io> | <https://github.com/ArnaudTA> |
 
 ## Source Code
 
