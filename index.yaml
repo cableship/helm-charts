@@ -104,6 +104,37 @@ entries:
       artifacthub.io/operator: "false"
     apiVersion: v2
     appVersion: 0.1.0
+    created: "2025-09-16T19:32:48.656799337Z"
+    description: 'A Helm chart for ChartSentinel  This application tracks your ArgoCD
+      applications watch chart sources and report when new versions ar available '
+    digest: 3018a2de5b7325de4873a900c18ea05f8d7f4d64306f11a31013ee4774d24914
+    home: https://github.com/cableship/chart-sentinel
+    icon: https://raw.githubusercontent.com/cableship/chart-sentinel/refs/heads/main/packages/frontend/src/assets/no-background.png
+    keywords:
+    - argocd
+    - chart
+    - monitoring
+    maintainers:
+    - email: arnaud.tardif@tuta.io
+      name: ArnaudTa
+      url: https://github.com/ArnaudTA
+    name: chart-sentinel
+    sources:
+    - https://github.com/cableship/chart-sentinel
+    type: application
+    urls:
+    - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.12/chart-sentinel-0.0.12.tgz
+    version: 0.0.12
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/cableship/helm-charts
+        - name: Upstream Project
+          url: https://github.com/cableship/chart-sentinel
+      artifacthub.io/operator: "false"
+    apiVersion: v2
+    appVersion: 0.1.0
     created: "2025-09-06T22:28:12.689767289Z"
     description: 'A Helm chart for ChartSentinel  This application tracks your ArgoCD
       applications watch chart sources and report when new versions ar available '
@@ -169,4 +200,4 @@ entries:
     urls:
     - https://github.com/cableship/helm-charts/releases/download/chart-sentinel-0.0.9/chart-sentinel-0.0.9.tgz
     version: 0.0.9
-generated: "2025-09-06T22:28:12.689799749Z"
+generated: "2025-09-16T19:32:48.656831527Z"
