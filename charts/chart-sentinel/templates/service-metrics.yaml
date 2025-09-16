@@ -1,16 +1,18 @@
+{{- if and (.Values.server.metricsPort) (ne .Values.server.metricsPort .Values.server.port) }}
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "chart-sentinel.fullname" . }}
+  name: {{ include "chart-sentinel.fullname" . }}-metrics
   labels:
     {{- include "chart-sentinel.labels" . | nindent 4 }}
-    component: app
+    component: metrics
 spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: metrics
       protocol: TCP
       name: http
   selector:
     {{- include "chart-sentinel.selectorLabels" . | nindent 4 }}
+{{- end }}
