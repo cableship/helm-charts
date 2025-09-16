@@ -1,0 +1,25 @@
+{{- if .Values.prometheus.enabled -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "chart-sentinel.fullname" . }}
+  labels:
+    {{- include "chart-sentinel.labels" . | nindent 4 }}
+    {{- if eq .Values.server.metricsPort .Values.server.port }}
+    component: app
+    {{- else }}
+    component: metrics
+    {{- end }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "chart-sentinel.labels" . | nindent 6 }}
+      {{- if eq .Values.server.metricsPort .Values.server.port }}
+      component: app
+      {{- else }}
+      component: metrics
+      {{- end }}
+  endpoints:
+  - port: http
+    path: /metrics
+{{- end -}}
